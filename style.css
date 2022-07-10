@@ -43,7 +43,7 @@ header nav .right p:hover {
   color: white;
 }
 
-header nav .right button {
+header nav .right a {
   padding: 5px 15px;
   font-size: 16px;
   background-color: inherit;
@@ -53,7 +53,7 @@ header nav .right button {
   cursor: pointer;
 }
 
-header nav .right button:hover {
+header nav .right a:hover {
   color: inherit;
   background-color: var(--violet);
   transition: color 0.5s, background-color 0.5s;
@@ -78,9 +78,9 @@ header nav .right button:hover {
 .presentation .product-presentation p {
   font-weight: 300;
   color: #e9e9e9;
+  margin-bottom: 45px;
 }
-.presentation .product-presentation button {
-  margin-top: 20px;
+.presentation .product-presentation a {
   padding: 15px 20px;
   font-size: 15px;
   border-radius: 10px;
@@ -94,18 +94,18 @@ header nav .right button:hover {
   margin-left: 20px;
 }
 
-.first .product-presentation button {
+.first .product-presentation a {
   background-color: var(--violet);
   border: 1px solid var(--violet);
   color: #fff;
 }
-.first .product-presentation button:hover {
+.first .product-presentation a:hover {
   background-color: inherit;
   color: var(--violet);
   transition: background-color 0.5s, color 0.5s;
 }
 .first .product-presentation .small-images {
-  margin-top: 30px;
+  margin-top: 45px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -115,6 +115,9 @@ header nav .right button:hover {
   background-color: #33314d;
   margin: 0 15px 15px 0;
   border-radius: 20px;
+}
+.first .product-presentation .small-images .three {
+  margin-left: 85px;
 }
 .first .product-presentation .small-images .small:hover {
   filter: brightness(80%);
@@ -131,12 +134,12 @@ header nav .right button:hover {
 .second .product-presentation .new {
   color: var(--violet);
 }
-.second .product-presentation button {
+.second .product-presentation a {
   background: inherit;
   border: 1px solid var(--violet);
   color: var(--violet);
 }
-.second .product-presentation button:hover {
+.second .product-presentation a:hover {
   background-color: var(--violet);
   color: #fff;
   transition: background-color 0.5s, color 0.5s;
