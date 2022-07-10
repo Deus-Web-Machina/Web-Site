@@ -73,7 +73,7 @@ header nav .right button:hover {
 .presentation .product-presentation h1 {
   margin: 0;
   font-size: 4vw;
-  width: 80%;
+  width: 100%;
 }
 .presentation .product-presentation p {
   font-weight: 300;
@@ -90,6 +90,8 @@ header nav .right button:hover {
 }
 .presentation .image-presentation img {
   width: 100%;
+  border-radius: 25px;
+  margin-left: 20px;
 }
 
 .first .product-presentation button {
