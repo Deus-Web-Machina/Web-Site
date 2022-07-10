@@ -2,6 +2,7 @@
 
 :root {
   --violet: #d33bfd;
+  --buttonPadding: 20px 25px
 }
 
 body {
@@ -98,11 +99,15 @@ header nav .right a:hover {
   background-color: var(--violet);
   border: 1px solid var(--violet);
   color: #fff;
+  position: relative;
+  text-decoration: none;
+  transition: background-color 0.5s, color 0.5s, padding 0.5s;
 }
 .first .product-presentation a:hover {
   background-color: inherit;
   color: var(--violet);
-  transition: background-color 0.5s, color 0.5s;
+  padding: var(--buttonPadding);
+  transition: background-color 0.5s, color 0.5s, padding 0.5s;
 }
 .first .product-presentation .small-images {
   margin-top: 45px;
@@ -115,13 +120,16 @@ header nav .right a:hover {
   background-color: #33314d;
   margin: 0 15px 15px 0;
   border-radius: 20px;
+  transition: filter 0.5s, padding 0.5s;
 }
 .first .product-presentation .small-images .three {
   margin-left: 85px;
 }
 .first .product-presentation .small-images .small:hover {
   filter: brightness(80%);
-  transition: filter 0.5s;
+  padding: 35px;
+  transition: filter 0.5, padding 0.5s;
+  transition-delay: 0s;
 }
 .first .product-presentation .small-images .small img {
   width: 120px;
@@ -138,11 +146,14 @@ header nav .right a:hover {
   background: inherit;
   border: 1px solid var(--violet);
   color: var(--violet);
+  transition: background-color 0.5s, color 0.5s, padding 0.5s;
 }
 .second .product-presentation a:hover {
   background-color: var(--violet);
   color: #fff;
-  transition: background-color 0.5s, color 0.5s;
+  position: relative;
+  padding: var(--buttonPadding);
+  transition: background-color 0.5s, color 0.5s, padding 0.5s;
 }
 
 footer {
@@ -164,7 +175,7 @@ footer p:hover {
   color: #fff;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 650px) {
   nav .right p {
     display: none;
   }
@@ -177,10 +188,19 @@ footer p:hover {
   .first .product-presentation .small-images .small img {
     width: 90px;
   }
+  .first .product-presentation .small-images .three {
+    margin-left: 0px
+  }
   footer {
     justify-content: flex-start;
   }
   footer .column {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .first .product-presentation .small-images .three {
+    margin-left: 70px
   }
 }
